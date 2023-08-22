@@ -4,9 +4,10 @@ const Video = ({
   views,
   rateing,
   color,
-  img,
+  img_id,
   yearAge,
   verified,
+
 }) => {
   return (
     <>
@@ -24,7 +25,7 @@ const Video = ({
           boxShadow: "rgb(38, 57, 77) 0px 20px 30px -10px",
         }}
       >
-        <img src={img} alt="imges" />
+        <img src={`https://picsum.photos/id/${img_id}/300/300`} alt="imges" />
         <h1>{title}</h1>
 
         <div>

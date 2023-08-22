@@ -6,10 +6,10 @@ import Footer from "./components/Footer";
 function App() {
   let Videos = [
     {
-      id:1,
+      id:100,
+      img_id:1,
       title: "React Js",
       channelNam: "UsmanReview",
-      img: "https://picsum.photos/id/236/300/300",
       views: 10,
       yearAge: "1 year age",
       color: "blue",
@@ -17,10 +17,10 @@ function App() {
       verified: true,
     },
     {
-      id:2,
+      id:101,
+      img_id:2,
       title: "Node Js",
       channelNam: "UsmanReview",
-      img: "https://picsum.photos/id/237/300/300",
       views: 10,
       yearAge: "1 year age",
       color: "green",
@@ -28,10 +28,10 @@ function App() {
       verified: true,
     },
     {
-      id:3,
+      id:103,
+      img_id:3,
       title: "Express Js",
       channelNam: "UsmanReview",
-      img: "https://picsum.photos/id/238/300/300",
       views: 10,
       yearAge: "1 year age",
       color: "red",
@@ -47,10 +47,10 @@ function App() {
         {Videos.map((video) => (
           <Video
             // key={video.title} // Make sure to add a unique key for each video
-            id = {video.id}
+            id={video.id}
             title={video.title}
             channelName={video.channelNam}
-            img={video.img}
+            img_id={video.img_id}
             yearAge={video.yearAge}
             views={video.views}
             color={video.color}
