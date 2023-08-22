@@ -16,6 +16,7 @@ const Video = ({
           color: "white",
           textTransform: "uppercase",
           display: "flex",
+          flexDirection:"column",
           justifyContent: "space-around",
           alignItems: "center",
           backgroundColor: color,
