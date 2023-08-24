@@ -7,7 +7,7 @@ const Video = ({
   img_id,
   yearAge,
   verified,
-
+  children,
 }) => {
   return (
     <>
@@ -16,11 +16,12 @@ const Video = ({
           color: "white",
           textTransform: "uppercase",
           display: "flex",
-          flexDirection:"column",
+          flexDirection: "row",
           justifyContent: "space-around",
           alignItems: "center",
           backgroundColor: color,
           margin: 20,
+          flexWrap:"wrap",
           padding: 20,
           borderRadius: 10,
           boxShadow: "rgb(38, 57, 77) 0px 20px 30px -10px",
@@ -38,6 +39,7 @@ const Video = ({
         </h3>
 
         <h4>{rateing}</h4>
+        <div>{children}</div>
       </div>
     </>
   );
