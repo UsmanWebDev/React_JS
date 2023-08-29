@@ -1,15 +1,22 @@
 import React from "react";
 import "./PlayButton.css";
+import { useState } from "react";
 
 const PlayButton = ({ message, children, onPlay, onPause }) => {
-  let Playing = false; // 
+  const [Playing, setPlaying] = useState(false);
   function handclick(e) {
-    e.stopPropagation()
-    if (Playing) onPause();
-    else onPlay();
 
-    Playing = !Playing;
+    e.stopPropagation();
+
+    if (Playing) {
+      onPause();
+    } else {
+      onPlay();
+    } 
+
+    setPlaying(!Playing);
   }
+
 
   return (
     <div>
